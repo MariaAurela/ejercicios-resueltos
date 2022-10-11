@@ -1,0 +1,7 @@
+# ejercicios-resueltos
+import string
+import random
+def generar(tamagnio=10,caracteres=string.ascii_letters+string.digits+string.punctuation):
+  return " ".join(random.choice(caracteres) for _ in range(tamagnio))
+  print(generar())
+  print(generar(15))
