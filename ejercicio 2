@@ -1,0 +1,16 @@
+# ejercicios-resueltos
+Realizar un programa que le permita al usuario Ingresar un número y que este mismo le determine si es número PRIMO o no lo es. 
+
+
+numeroprimo= int(input("ingrese un numero para saber si es primo o no ")) #pedimos al usuario
+valor= range(2,numeroprimo) #definimos la variable en un rango
+contar = 0 #inicializamos una variable
+for k in valor: 
+  if numeroprimo % k == 0:
+    contar +=1
+    print("divisor:", k)
+ 
+if contar > 0 :
+  print("El número no es primo" )
+else:
+  print("El nÚmero es primo")
