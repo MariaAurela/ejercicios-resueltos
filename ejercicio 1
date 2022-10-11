@@ -1,0 +1,7 @@
+email=input("ingrese su correo para validarlo : ") #pedimos al usuario que ingrese el correo
+def validar(email): #hacemos una funcion
+  c=email #definimos una variable
+if "@" in email: #utlizamos los condicionales
+    print("es valido")
+else:
+    print("no es valido")
