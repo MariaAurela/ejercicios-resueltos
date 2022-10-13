@@ -1,17 +1,14 @@
 # ejercicios-resueltos
 
-import string #Importamos las librerias
+import string
 import random
-num = int (input ("Ingrese el ancho de la contraseña"))
-rangepass = string.ascii_letters+string.digits
-def generar_contraseña():
-         # El bit de función especifica la salida de 15 contraseñas aleatorias al tiempo que admite el uso definido por el usuario
-    contraseña1 = ''
-    for i in range(num):
-        contraseña1 += random.choice(rangepass)
-    return contraseña1
-data = generar_contraseña()
-print(data)
+def generador_clave(tamagnio = 10, caracteres=string.ascii_letters + string.digits + string.punctuation):
+    return ''.join(random.choice(caracteres) for _ in range(tamagnio))
+
+
+print(generador_clave())
+print(generador_clave(15))
+print(generador_clave())
 
 
 
